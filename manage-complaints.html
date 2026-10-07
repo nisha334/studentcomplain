@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Complaints</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>Student Complaint Management</h2>
+
+        <div>
+
+            <a href="admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="manage-complaints.html">
+                Manage Complaints
+            </a>
+
+            <a href="#" id="logoutBtn">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <div class="dashboard-container">
+
+        <h1>Manage Complaints</h1>
+
+        <p>
+            Update complaint status and manage student complaints.
+        </p>
+
+
+        <!-- Search and Filter -->
+
+        <div class="search-filter">
+
+            <input
+                type="text"
+                id="searchComplaint"
+                placeholder="Search by student name or subject"
+            >
+
+            <select id="statusFilter">
+
+                <option value="All">
+                    All Status
+                </option>
+
+                <option value="Pending">
+                    Pending
+                </option>
+
+                <option value="In Progress">
+                    In Progress
+                </option>
+
+                <option value="Resolved">
+                    Resolved
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Complaint List -->
+
+        <div id="adminComplaintsList"></div>
+
+    </div>
+
+
+    <script type="module" src="js/admin.js"></script>
+
+    <script type="module" src="js/auth.js"></script>
+
+</body>
+
+</html>

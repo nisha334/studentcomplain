@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>Student Complaint Management</h2>
+
+        <div>
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="manage-complaints.html">Manage Complaints</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </div>
+    </nav>
+
+
+    <div class="dashboard-container">
+
+        <h1>Welcome to Admin Dashboard</h1>
+
+        <p>
+            Monitor student complaints and their current status.
+        </p>
+
+
+        <!-- Complaint Counts -->
+
+        <div class="complaint-summary">
+
+            <div class="summary-card">
+
+                <h3>Pending</h3>
+
+                <h2 id="adminPendingCount">0</h2>
+
+                <p>
+                    Complaints waiting for action
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <h3>In Progress</h3>
+
+                <h2 id="adminProgressCount">0</h2>
+
+                <p>
+                    Complaints being handled
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <h3>Resolved</h3>
+
+                <h2 id="adminResolvedCount">0</h2>
+
+                <p>
+                    Successfully resolved
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- All Complaints -->
+
+        <h2 style="margin-top: 45px;">
+            All Complaints
+        </h2>
+
+        <p>
+            View all complaints and their current status.
+        </p>
+
+
+        <div id="adminDashboardComplaints"></div>
+
+
+        <div style="margin-top: 30px;">
+
+            <a href="manage-complaints.html">
+                <button>
+                    Manage Complaints
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src="js/admin.js"></script>
+    
+
+</body>
+</html>

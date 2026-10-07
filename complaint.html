@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Complaint</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>Student Complaint Management</h2>
+
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="my-complaints.html">My Complaints</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </div>
+    </nav>
+
+    <div class="form-container">
+
+        <h2>Submit Complaint</h2>
+
+        <form id="complaintForm">
+
+            <label>Complaint Category</label>
+
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="Academic">Academic</option>
+                <option value="Exam">Exam</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Infrastructure">Infrastructure</option>
+                <option value="Library">Library</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Subject</label>
+
+            <input
+                type="text"
+                id="subject"
+                placeholder="Enter complaint subject"
+                required
+            >
+
+            <label>Description</label>
+
+            <textarea
+                id="description"
+                placeholder="Write your complaint"
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit">Submit Complaint</button>
+
+        </form>
+
+    </div>
+
+    <script type="module" src="js/complaint.js"></script>
+    <script type="module" src="js/auth.js"></script>
+
+</body>
+
+</html>

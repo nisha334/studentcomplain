@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>Student Complaint Management</h2>
+
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="my-complaints.html">My Complaints</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </div>
+    </nav>
+
+    <div class="form-container">
+
+        <h2>My Profile</h2>
+
+        <label>Full Name</label>
+        <input type="text" id="profileName" readonly>
+
+        <label>Student ID</label>
+        <input type="text" id="profileStudentId" readonly>
+
+        <label>Email</label>
+        <input type="email" id="profileEmail" readonly>
+
+        <label>Role</label>
+        <input type="text" id="profileRole" readonly>
+
+    </div>
+
+    <script type="module" src="js/auth.js"></script>
+
+</body>
+
+</html>
